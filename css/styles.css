@@ -11,3 +11,9 @@ div img{
    max-width:70%;
    max-height:10%;
 } 
+.map{
+	background-repeat: no-repeat;
+       background-size: contain; 
+       height: 100vh;
+       width:100vh;
+}
