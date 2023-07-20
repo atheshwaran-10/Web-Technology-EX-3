@@ -1,4 +1,13 @@
-.map{
-  height: 500px;
-  width: 650px;
+ div{
+  width:100%;
+   display:flex;
+   justify-content:center;
+   align-items:center;
+   overflow:hidden
 }
+div img{
+ flex-shrink:0;
+   -webkit-flex-shrink: 0;
+   max-width:70%;
+   max-height:10%;
+} 
