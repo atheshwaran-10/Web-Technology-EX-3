@@ -3,6 +3,7 @@ html,
 body {
  background: linear-gradient(120deg,#50cc08  ,#00c3cd );
  background-repeat: no-repeat;
+ font-family: Arial, sans-serif;
   display: flex;
   height: 100vh;
   align-items: center;
@@ -103,3 +104,19 @@ input:checked+.slide-container .nav label {
   display: block;
 }
 
+
+.cards
+{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.card{
+  background-color: #ffffff;
+  border-radius: 5px;
+  width:250px;
+  height:160px;
+  font-size: 13px;
+}
+.card> p {
+  margin: 5px 5px 5px 6px;
+}
