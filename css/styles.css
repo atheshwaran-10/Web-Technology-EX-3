@@ -1,19 +1,24 @@
- div{
-  width:100%;
-   display:flex;
-   justify-content:center;
-   align-items:center;
-   overflow:hidden
-}
-div img{
- flex-shrink:0;
+div {
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   overflow: hidden;
+   height: 100vh; /* Add this line to ensure the div takes up the full viewport height */
+ }
+ 
+ div img {
+   flex-shrink: 0;
    -webkit-flex-shrink: 0;
-   max-width:70%;
-   max-height:10%;
-} 
-.map{
-	background-repeat: no-repeat;
-       background-size: contain; 
-       height: 100vh;
-       width:100vh;
-}
+   max-width: 100%;
+   max-height: 100%; /* Set the maximum height to 100% to make the image fully visible */
+   object-fit: contain; /* This property ensures the image retains its aspect ratio while fitting inside the container */
+ }
+ 
+ .map {
+   background-repeat: no-repeat;
+   background-size: contain;
+   height: 100%; /* Set the height of the .map class to 100% to fill the frame */
+   width: 100%; /* Set the width of the .map class to 100% to fill the frame */
+ }
+ 
