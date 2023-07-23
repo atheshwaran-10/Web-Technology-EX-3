@@ -15,6 +15,7 @@ div {
 
 .welcome{
   font-family:'Nature Beauty Personal Use';font-weight:normal;font-size:42px;
+  text-shadow: 5px 5px #000;
 }
  div img {
    flex-shrink: 0;
@@ -129,7 +130,8 @@ body {
 }
 
 .center{
-  z-index: 1;
+text-shadow: 5px 5px #000;
+z-index: 1;
  margin-top: -1em;
  position: absolute;
  font-family:'Nature Beauty Personal Use';font-weight:normal;font-size:22px;
