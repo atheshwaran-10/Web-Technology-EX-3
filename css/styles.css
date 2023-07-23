@@ -4,21 +4,134 @@ div {
    justify-content: center;
    align-items: center;
    overflow: hidden;
-   height: 100vh; /* Add this line to ensure the div takes up the full viewport height */
+   height: 100vh; 
  }
- 
+ @font-face {
+  font-family: 'Nature Beauty Personal Use';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Nature Beauty Personal Use'), url('Nature Beauty Personal Use.woff') format('woff');
+}
+
+.welcome{
+  font-family:'Nature Beauty Personal Use';font-weight:normal;font-size:42px;
+}
  div img {
    flex-shrink: 0;
    -webkit-flex-shrink: 0;
    max-width: 100%;
-   max-height: 100%; /* Set the maximum height to 100% to make the image fully visible */
-   object-fit: contain; /* This property ensures the image retains its aspect ratio while fitting inside the container */
+   max-height: 100%; 
+   object-fit: contain;
  }
  
  .map {
    background-repeat: no-repeat;
    background-size: contain;
-   height: 100%; /* Set the height of the .map class to 100% to fill the frame */
-   width: 100%; /* Set the width of the .map class to 100% to fill the frame */
+   height: 100%; 
+   width: 100%; 
  }
+ html,
+body {
+  background: linear-gradient(#00c3cd  80%,#50cc08 70%  );
+ background-repeat: no-repeat;
+ font-family: Arial, sans-serif;
+ color: #ffffff;
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
  
+.container{
+  text-align: center;
+  position: absolute;
+  top:-44%;
+}
+
+.img1,.img2{
+  position: absolute;
+  cursor: pointer;
+  margin-top: 1px;
+  height: 60px;
+  width: 60px;
+  
+}
+.left{
+ 
+  position: absolute;
+  left: -40em;
+}
+
+.right{
+  position: absolute;
+  right: -40em;
+}
+
+.man{
+  cursor: pointer;
+  height: 280px;
+  width: 280px;
+  position: absolute;
+  top: 53%;
+  right:2%;
+}
+
+.dance{
+  cursor: pointer;
+  height: 200px;
+  width: 210px;
+  position: absolute;
+  top: 58%;
+  left:-1%;
+}
+.crows{
+  height: 200px;
+  width: 250px;
+  position: absolute;
+  top: -6%;
+  right:1% ;
+}
+
+.para {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 15px;
+  margin-right: 10px;
+  color: #020202;
+}
+.wrap:hover .cloud,.wrap2:hover .cloud2 {
+  visibility: visible;
+  opacity: 1;
+}
+
+.cloud{
+  height: 150px;
+  width: 250px;
+  border-radius: 50px;
+  position: absolute;
+  left: 4%;
+  background-color: #ffffff;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .8s, visibility .8s ease-in;
+}
+.cloud2{
+  height: 140px;
+  width: 240px;
+  border-radius: 50px;
+  position: absolute;
+  top: 44%;
+  right: 18%;
+  background-color: #ffffff;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .8s, visibility .8s ease-in;
+}
+
+.center{
+  z-index: 1;
+ margin-top: -1em;
+ position: absolute;
+ font-family:'Nature Beauty Personal Use';font-weight:normal;font-size:22px;
+ word-spacing: 2em;
+}
